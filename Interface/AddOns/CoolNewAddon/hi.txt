@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 LOCAL CHANGE v2
+=======
+REMOTE CHANGE
+>>>>>>> origin/master
