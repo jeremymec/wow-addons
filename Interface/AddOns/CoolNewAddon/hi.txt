@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-local change v2
-=======
 remote change
->>>>>>> origin/master
