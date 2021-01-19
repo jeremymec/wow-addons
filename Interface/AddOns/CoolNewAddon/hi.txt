@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-BAD CHANGE
-=======
-REMOTE CHANGE
->>>>>>> origin/master
+LOCAL CHANGE
