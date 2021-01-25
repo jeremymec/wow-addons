@@ -2,6 +2,7 @@
 WeakAurasSaved = {
 	["dynamicIconCache"] = {
 	},
+	["editor_tab_spaces"] = 4,
 	["login_squelch_time"] = 10,
 	["lastArchiveClear"] = 1609941315,
 	["minimap"] = {
@@ -14,4 +15,5 @@ WeakAurasSaved = {
 	},
 	["displays"] = {
 	},
+	["editor_theme"] = "Monokai",
 }
