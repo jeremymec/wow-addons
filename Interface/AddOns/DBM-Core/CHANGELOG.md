@@ -1,60 +1,54 @@
 # Deadly Boss Mods Core
 
-## [9.0.12](https://github.com/DeadlyBossMods/DeadlyBossMods/tree/9.0.12) (2020-12-22)
-[Full Changelog](https://github.com/DeadlyBossMods/DeadlyBossMods/compare/9.0.11...9.0.12) [Previous Releases](https://github.com/DeadlyBossMods/DeadlyBossMods/releases)
+## [9.0.18](https://github.com/DeadlyBossMods/DeadlyBossMods/tree/9.0.18) (2021-01-19)
+[Full Changelog](https://github.com/DeadlyBossMods/DeadlyBossMods/compare/9.0.17...9.0.18) [Previous Releases](https://github.com/DeadlyBossMods/DeadlyBossMods/releases)
 
-- Fix incorrect voice with one that's slightly less incorrect  
-- Sync some bug fixes into mainline sire, but with mythic specific code stripped out  
-    Prep new release for new raid week  
-- Unfuck phase 2 timers  
-- Fix a big fuckup  
-- Fixed a bug that caused wicked blade icons never to reset and timer not to show on normal difficulty generals  
-- Add berserk timers to generals  
-- Generals Update:  
-     - Updated timers per Dec 18th hotfixes to some of them  
-     - Changed default icon options and icon usages to be more compatible with heart rend+add marking strategy, OR target mechanics+ add marking strat. Whichever you choose.  
-     - Fixed an issue where the mythic adds timer could start if adds popped out at same time as shield going up, causing you to have an invalid initial adds timer for a phase that doesn't have skirmishers  
-     - Fixed initial mythic timers, which differ from non mythic  
-     - Fixed a bug where wicked blade timer incorrectly reset between phases. it never resets, ever, for entirety of fight, same as crystalize.  
-     - Fixed a bug that caused the Heart Rend target announce to never show  
-     - Changed heart rend timer to sync up to cast START instead of cast success  
-     - Changed most timers and warnings to have count in them  
-     - Updated Wicked Slaughter timer, which is shorter on live vs beta  
-     - Added new optional special warning (off by default) to run to crystalize target when it goes out, if you have bleeds on you that need clearing.  
-     - Added new optional special warning for when heart rend is being CAST (also off by default)  
-     - Added optional off by default warning to auto assign mythic eruption soaks to the players that spawned them. Don't enable if your strat is to assign custom assignments  
-     - Added a new Spell queue detection feature that automatically adjusts all boss timers during fight whenever ability casts cause other ability casts to get delayed. This will actively and fluidlly keep timers up to date even in the worst of spell queue situations.  
-- Update localization.cn.lua (#449)  
-    * Update localization.cn.lua  
-    * Update localization.cn.lua  
-- Update zhTW (#446)  
-- Update GUI zhTW (#447)  
-- Update koKR (#444)  
-- Make boss preview 300x300 (#443)  
-    This makes mobs actually RENDER properly, without cutting their heads off.  
-- Tell GUI to ignoreCustom (#442)  
-    * Tell GUI to ignoreCustom  
-    * And here too  
-- Also changed Drain fluids to be off by default based on feedback.  
-- Now that Altimor isn't broken, fix P4 sinseeker timer on mythic  
-    Also removed bad taunt warning in spires of ascension.. that mechanic doesn't seem to exist anymore  
-- Added two special warnings for both add switches on Council of Blood  
-    Added likely respawn time to sludgefist.  
-- Actually show the count in the gaze and slam warnings  
-- Updated zhTW (#441)  
-- Proper syntax for failures. (#431)  
-- Mod profile import/export (#440)  
-- Fix two stupid  
-- Fixed a bug wehre chain link warning never actually gave you partner name when it was supposed to  
-    Disabled sinseeker timer for phase 4 mythic since it doesn't get cast in P4?  
-    Made lady inerva personal warning for shared suffering 1 second faster  
-- Support for CustomSounds (the hacky way of installing sounds) (#439)  
-- Fix regression issue properly (#437)  
-- Tweaked altimor sinseeker timers now that some longer lasting pulls exist on WCL  
-    More aggressivevly restore sounds on login if option to disable them exists. Wouldn't want blizzard to delete that setting from the game too  
-- Update zhTW (#436)  
-- Blizzard apparently killed off ability to hide quest tooltips in 9.0, so disabled from DBM as well.  
-- Fix typo  
-- Fixed a serious regression that causes core to spam lua errors when playing sounds.  
-    Fixed a bug on sludgefist where the seismic timer would keep on keeping on when it ran out of sequenced timers. now it'll cleanup when it reaches end of timer table.. still need to fix actual missing timers.  
-- bump alpha revision  
+- Prep new tag  
+- further throttle duplicate events on altimor  
+- LuaCheck cleanup (#484)  
+    * LuaCheck cleanup  
+- Remove unessesary check, we know target mapID so it doesn't need to be checked  
+- Optimize some infoframes (#483)  
+- Don't show players outside zone on hungering destroyer infoframe  
+- Several aranomonos timer fixes  
+- Fix #479 (#480)  
+- Added optional off by default special warning to interrupt dreadbolt volley. This warning does NOT use the filter function at all meaning it always fires regardless of target or spell cooldown, which is why it's off by default.  
+- Fixed bug where souls pikes was extended twice and subtracted twice, and prideful was never extended beyond dance at all  
+- I'm gonna leave this debug code around for a while, but at least fix the duplicate entries  
+- Stray copy/paste  
+- Several countdown fixes related to live bar updates  
+     - Fixed a bug where default countdowns would start even when users had countdown completely disabled for that timer option,  after a bar fade or time remaining was live updated.  
+     - Fixed a bug where bar updates would swap to default voice even when a custom voice was used.  
+     - Fixed a bug where a countdown would not be canceled during a bar update for a bar a user set a countown on manually but had no default countdown option defined.  
+     - Fixed a bug where a new countdown would needlessly be scheduled after a bar update, when remaining time on the new bar is less than 3.  
+- prep further debug  
+- Prepare timer test conditions for debugging addition or subtraction timer methods  
+- If test mode is started over before it's finished, abort previous timers/countdowns to avoid false debug and duplicate countdowns  
+    Possibly fix the real issue behind #476. Although this requires more testing tomorrow  
+- Tidied up sire timer options a little.  
+    Grouped up timer options on shriekwing for earsplitting shriek so they aren't in two diff spots  
+- Adjust the dims of the special warning and coundown dropdowns so "None" is never runcated, improving readability of them quite a bit  
+- Improve Halkias timers. Closes #473  
+- Improve tank stuff on darkvein based on feedback.  
+     - warped desires stack warning is on by default now.  
+     - warped desires stack warning will no longer wrongfully say to taunt if you still have stacks yourself  
+     - warped desires stack warning will no longer go off if stacks came from adds (this is a bad timing and can cause cleaves)  
+     - hidden desires taunt warning that was on by default is now off by default, that's a niche thing that requires knowing precise timing to do it safely so it shouldn't be something DBM defaults.  
+- Fixed glyph CD, which was correct on in notes but not in timer for some reason.  
+- The whole bug is because difficulty doesn't actually return as mythic plus (8) for nearly 6 seconds after the challenge mode event has already fired.  
+- Fix  
+- Try fixing CM logging a different way  
+- Attempt to fix up Beryllia's tmers some  
+- Update koKR (#472)  
+    Co-authored-by: QartemisT <QartemisT@gmail.com>  
+    Co-authored-by: Adam <MysticalOS@users.noreply.github.com>  
+- Manastorms: P2 Aerial Rocket Chicken is party-wide damage that's not … (#474)  
+- Also another tweak to remove unnessesary rescheduling instantly after rescheduling if both combat logging and transcriptor logging used at same time  
+- Slightly better  
+- Fix core to always log if PT is used, period and update checkforActualPull to support M+ in this behavior as well  
+- Couple timer tweaks  
+- Fix overwhelm not showing which name (#471)  
+- Fixed voicepack bug where deathgate warning had no voice assigned  
+- Update zhCN (#469)  
+- Update zhTW (#468)  
+- Bump alpha  

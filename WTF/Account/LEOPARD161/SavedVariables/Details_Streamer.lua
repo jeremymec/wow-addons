@@ -1,20 +1,17 @@
 
 Details_StreamerDB = {
 	["characters"] = {
-		["Carbhead - Frostmourne"] = "Carbhead - Frostmourne",
 		["Russellor - Frostmourne"] = "Carbhead - Frostmourne",
 		["Beefpho - Frostmourne"] = "Carbhead - Frostmourne",
 		["Blackwarrior - Frostmourne"] = "Carbhead - Frostmourne",
+		["Wuyi - Frostmourne"] = "Carbhead - Frostmourne",
+		["Carbhead - Frostmourne"] = "Carbhead - Frostmourne",
 	},
 	["profiles"] = {
 		["Carbhead - Frostmourne"] = {
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["use_square_mode"] = false,
 			["is_first_run"] = false,
+			["grow_direction"] = "right",
 			["arrow_color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -30,14 +27,22 @@ Details_StreamerDB = {
 				["radius"] = 160,
 				["hide"] = false,
 			},
-			["arrow_anchor_x"] = 0,
-			["row_texture"] = "Details Serenity",
 			["scale"] = 1,
+			["arrow_anchor_x"] = 0,
 			["row_height"] = 20,
+			["row_texture"] = "Details Serenity",
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["point"] = "CENTER",
 			["main_frame_strata"] = "LOW",
+			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["point"] = "CENTER",
+			["y"] = 4.57763671875e-05,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -45,8 +50,14 @@ Details_StreamerDB = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["use_spark"] = true,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -58,19 +69,13 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["font_size"] = 10,
 			["x"] = 0,
 			["font_face"] = "Friz Quadrata TT",
-			["y"] = 4.57763671875e-05,
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
-			["arrow_anchor_y"] = 0,
+			["square_size"] = 32,
+			["font_size"] = 10,
+			["author"] = "Details! Team",
 			["main_frame_locked"] = false,
-			["use_spark"] = true,
+			["arrow_anchor_y"] = 0,
 		},
 	},
 }

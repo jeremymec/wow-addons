@@ -6,7 +6,7 @@ WeakAurasSaved = {
 	},
 	["lastArchiveClear"] = 1609941315,
 	["minimap"] = {
-		["minimapPos"] = 159.2457740057836,
+		["minimapPos"] = 240.6221430896172,
 		["hide"] = false,
 	},
 	["lastUpgrade"] = 1609941322,

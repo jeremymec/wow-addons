@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2428, "DBM-CastleNathria", nil, 1190)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20201217054835")
+mod:SetRevision("20210118214451")
 mod:SetCreatureID(164261)
 mod:SetEncounterID(2383)
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
@@ -37,7 +37,7 @@ local warnGluttonousMiasma						= mod:NewTargetNoFilterAnnounce(329298, 4, nil, 
 local warnVolatileEjection						= mod:NewTargetNoFilterAnnounce(334266, 4, nil, nil, 202046)
 
 local specWarnGluttonousMiasma					= mod:NewSpecialWarningYouPos(329298, nil, 212238, nil, 1, 2)
-local yellGluttonousMiasma						= mod:NewPosYell(329298, DBM_CORE_L.AUTO_YELL_CUSTOM_POSITION2, false, 2)
+local yellGluttonousMiasma						= mod:NewShortPosYell(329298, 212238, false, 2)
 local specWarnEssenceSap						= mod:NewSpecialWarningStack(334755, false, 8, nil, 2, 1, 6)--Mythic, spammy, opt in
 local specWarnConsume							= mod:NewSpecialWarningRun(334522, nil, nil, nil, 4, 2)
 local specWarnExpunge							= mod:NewSpecialWarningMoveAway(329725, nil, nil, nil, 1, 2)
@@ -71,7 +71,6 @@ mod:AddBoolOption("ShowTimeNotStacks", false)
 local GluttonousTargets = {}
 local essenceSapStacks = {}
 local playerEssenceSap, playerVolatile = false, false
-local miasmaShortName = DBM:GetSpellInfo(212238)
 mod.vb.volatileIcon = 5
 mod.vb.volatileCast = 0
 mod.vb.miasmaCount = 0
@@ -84,11 +83,10 @@ mod.vb.meleeFound = false
 
 local updateInfoFrame
 do
-	local twipe, tsort = table.wipe, table.sort
-	local lines = {}
-	local tempLines = {}
-	local tempLinesSorted = {}
-	local sortedLines = {}
+	local DBM = DBM
+	local GetPartyAssignment, GetTime, UnitGroupRolesAssigned, UnitIsDeadOrGhost, UnitPosition = GetPartyAssignment, GetTime, UnitGroupRolesAssigned, UnitIsDeadOrGhost, UnitPosition
+	local ipairs, mfloor, twipe, tsort = ipairs, math.floor, table.wipe, table.sort
+	local lines, tempLines, tempLinesSorted, sortedLines = {}, {}, {}, {}
 	local function sortFuncAsc(a, b) return tempLines[a] < tempLines[b] end
 	local function sortFuncDesc(a, b) return tempLines[a] > tempLines[b] end
 	local function addLine(key, value)
@@ -105,15 +103,13 @@ do
 		if playerEssenceSap then
 			local spellName, _, currentStack, _, _, expireTime = DBM:UnitDebuff("player", 334755)
 			if spellName and currentStack and expireTime then
-				local remaining = expireTime-GetTime()
-				addLine(spellName.." ("..currentStack..")", math.floor(remaining))
+				addLine(spellName.." ("..currentStack..")", mfloor(expireTime-GetTime()))
 			end
 		end
 		if playerVolatile then
 			local spellName2, _, _, _, _, expireTime2 = DBM:UnitDebuff("player", 334228)
 			if spellName2 and expireTime2 then
-				local remaining2 = expireTime2-GetTime()
-				addLine(spellName2, math.floor(remaining2))
+				addLine(spellName2, mfloor(expireTime2-GetTime()))
 			end
 		end
 		--Add entire raids Essence Sap players on Mythic
@@ -125,8 +121,7 @@ do
 						local unitName = DBM:GetUnitFullName(uId)
 						local spellName3, _, _, _, _, expireTime3 = DBM:UnitDebuff(uId, 334755)
 						if spellName3 and expireTime3 then
-							local remaining3 = expireTime3-GetTime()
-							tempLines[unitName] = math.floor(remaining3)
+							tempLines[unitName] = mfloor(expireTime3-GetTime())
 							tempLinesSorted[#tempLinesSorted + 1] = unitName
 						else
 							tempLines[unitName] = 0
@@ -137,7 +132,8 @@ do
 			else
 				--More performance friendly check that just returns all player stacks (the default option)
 				for uId in DBM:GetGroupMembers() do
-					if not (UnitGroupRolesAssigned(uId) == "TANK" or GetPartyAssignment("MAINTANK", uId, 1) or UnitIsDeadOrGhost(uId)) then--Exclude tanks and dead
+					local _, _, _, mapId = UnitPosition(uId)
+					if not (UnitGroupRolesAssigned(uId) == "TANK" or GetPartyAssignment("MAINTANK", uId, 1) or UnitIsDeadOrGhost(uId)) and mapId == 2296 then--Exclude tanks and dead and people not in zone
 						local unitName = DBM:GetUnitFullName(uId)
 						tempLines[unitName] = essenceSapStacks[unitName] or 0
 						tempLinesSorted[#tempLinesSorted + 1] = unitName
@@ -309,7 +305,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 	local spellId = args.spellId
 	if spellId == 329774 then
 		if not args:IsPlayer() then
-			specWarnOverwhelmTaunt:Show()
+			specWarnOverwhelmTaunt:Show(args.destName)
 			specWarnOverwhelmTaunt:Play("tauntboss")
 		end
 	end
@@ -339,15 +335,15 @@ function mod:SPELL_AURA_APPLIED(args)
 			self.vb.miasmaIcon = self.vb.miasmaIcon + 1
 			DBM:Debug("Ranged/Second Melee Miasma found: "..args.destName, 2)
 		end
+		if self.Options.SetIconOnGluttonousMiasma then
+			self:SetIcon(args.destName, icon)
+		end
 		if args:IsPlayer() then
 			specWarnGluttonousMiasma:Show(self:IconNumToTexture(icon))
 			specWarnGluttonousMiasma:Play("mm"..icon)--or "targetyou"
-			yellGluttonousMiasma:Yell(icon, miasmaShortName, icon)
+			yellGluttonousMiasma:Yell(icon, icon)
 		else
 			warnGluttonousMiasma:CombinedShow(0.3, args.destName)
-		end
-		if self.Options.SetIconOnGluttonousMiasma then
-			self:SetIcon(args.destName, icon)
 		end
 	elseif spellId == 334755 then
 		local amount = args.amount or 1
@@ -414,13 +410,13 @@ function mod:OnTranscriptorSync(msg, targetName)
 	if msg:find("334064") and targetName then
 		targetName = Ambiguate(targetName, "none")
 		if self:AntiSpam(4, targetName) then
-			warnVolatileEjection:CombinedShow(0.75, targetName)
 			if self.Options.SetIconOnVolatileEjection2 then
 				local oldIcon = self:GetIcon(targetName) or 0
 				if oldIcon == 0 then--Do not change a miasma icon under any circomstance
 					self:SetIcon(targetName, self.vb.volatileIcon, 5)
 				end
 			end
+			warnVolatileEjection:CombinedShow(0.75, targetName)
 			self.vb.volatileIcon = self.vb.volatileIcon + 1
 		end
 	end

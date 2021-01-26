@@ -1,4 +1,5 @@
-local instance = Details:GetInstance (number)	
+
+local instance = Details:GetInstance (number)
 returns the window object.
 
 =============================================================
