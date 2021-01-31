@@ -3,6 +3,19 @@ ElvCharacterDB = {
 	["ChatEditHistory"] = {
 		"oi what level are you", -- [1]
 		"LOL aight i'm wodnering if i should najke a shaman", -- [2]
+		"ah yes feels", -- [3]
+		"i'm still vibing with my tank", -- [4]
+		"wuu2", -- [5]
+		"did some of firelands the other day", -- [6]
+		"nah nah stopped doing healer", -- [7]
+		"i'm trying to get a shaman up for pvp", -- [8]
+		"actually if ur free", -- [9]
+		"cbk for a quick m_", -- [10]
+		"m+", -- [11]
+		"up to u tho", -- [12]
+		"wanna do a dungeon real quick?", -- [13]
+		"yeah i can't go on voice chat though, but i'm keen", -- [14]
+		"i'll get on tank", -- [15]
 	},
 	["ChatHistoryLog"] = {
 		{
@@ -49,5 +62,744 @@ ElvCharacterDB = {
 			[51] = 1611461640,
 			[50] = "CHAT_MSG_BN_WHISPER",
 		}, -- [2]
+		{
+			"thought you'd have a 60 healer by now?", -- [1]
+			"|Kq4|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			65, -- [11]
+			false, -- [12]
+			56, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Tailed|r",
+			[51] = 1611574624,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "Tailed",
+		}, -- [3]
+		{
+			"nah nah stopped doing healer", -- [1]
+			"|Kq4|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			67, -- [11]
+			false, -- [12]
+			56, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Tailed|r",
+			[51] = 1611574644,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Tailed",
+		}, -- [4]
+		{
+			"i'm still vibing with my tank", -- [1]
+			"|Kq4|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			68, -- [11]
+			false, -- [12]
+			56, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Tailed|r",
+			[51] = 1611574648,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Tailed",
+		}, -- [5]
+		{
+			"did some of firelands the other day", -- [1]
+			"|Kq4|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			69, -- [11]
+			false, -- [12]
+			56, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Tailed|r",
+			[51] = 1611574653,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Tailed",
+		}, -- [6]
+		{
+			"nice", -- [1]
+			"|Kq4|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			71, -- [11]
+			false, -- [12]
+			56, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Tailed|r",
+			[51] = 1611574658,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "Tailed",
+		}, -- [7]
+		{
+			"wuu2", -- [1]
+			"|Kq4|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			73, -- [11]
+			false, -- [12]
+			56, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Tailed|r",
+			[51] = 1611574699,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Tailed",
+		}, -- [8]
+		{
+			"tryin to finish my last torghast run for the week", -- [1]
+			"|Kq4|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			78, -- [11]
+			false, -- [12]
+			56, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Tailed|r",
+			[51] = 1611574724,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "Tailed",
+		}, -- [9]
+		{
+			"ah yes feels", -- [1]
+			"|Kq4|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			80, -- [11]
+			false, -- [12]
+			56, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Tailed|r",
+			[51] = 1611574732,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Tailed",
+		}, -- [10]
+		{
+			"i'm trying to get a shaman up for pvp", -- [1]
+			"|Kq4|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			82, -- [11]
+			false, -- [12]
+			56, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Tailed|r",
+			[51] = 1611574738,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Tailed",
+		}, -- [11]
+		{
+			"actually if ur free", -- [1]
+			"|Kq38|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			258, -- [11]
+			false, -- [12]
+			62, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Kalna",
+			[51] = 1611650521,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Kalna",
+		}, -- [12]
+		{
+			"cbk for a quick m_", -- [1]
+			"|Kq38|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			259, -- [11]
+			false, -- [12]
+			62, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Kalna",
+			[51] = 1611650524,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Kalna",
+		}, -- [13]
+		{
+			"m+", -- [1]
+			"|Kq38|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			260, -- [11]
+			false, -- [12]
+			62, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Kalna",
+			[51] = 1611650526,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Kalna",
+		}, -- [14]
+		{
+			"up to u tho", -- [1]
+			"|Kq38|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			261, -- [11]
+			false, -- [12]
+			62, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Kalna",
+			[51] = 1611650532,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Kalna",
+		}, -- [15]
+		{
+			"wanna do a dungeon real quick?", -- [1]
+			"|Kq21|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			262, -- [11]
+			false, -- [12]
+			45, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Zva|r",
+			[51] = 1611650559,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+		}, -- [16]
+		{
+			"yeah lol why do u think i'm on", -- [1]
+			"|Kq21|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			269, -- [11]
+			false, -- [12]
+			45, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Zva|r",
+			[51] = 1611650588,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [17]
+		{
+			"heard we doing mythic", -- [1]
+			"|Kq21|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			275, -- [11]
+			false, -- [12]
+			45, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Zva|r",
+			[51] = 1611650602,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [18]
+		{
+			"yeah i can't go on voice chat though, but i'm keen", -- [1]
+			"|Kq21|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			276, -- [11]
+			false, -- [12]
+			45, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Zva|r",
+			[51] = 1611650613,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+		}, -- [19]
+		{
+			"i'll get on tank", -- [1]
+			"|Kq21|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			277, -- [11]
+			false, -- [12]
+			45, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Zva|r",
+			[51] = 1611650617,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+		}, -- [20]
+		{
+			"WTS Last minute Torghast Layer 1-8's or Twisted's PM ME FOR INFO <3", -- [1]
+			"Lunarust-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lunarust-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			22, -- [11]
+			"Player-3725-0B0724C4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Lunarust|r",
+			[51] = 1611659585,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [21]
+		{
+			"WTS Level 14-15 keys in time, run by 1900rio group, pst for info. ", -- [1]
+			"Floydcitybch-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Floydcitybch-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			23, -- [11]
+			"Player-3725-0A585EE2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Floydcitybch|r",
+			[51] = 1611659587,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [22]
+		{
+			"Selling +10s now,  Msg for more info. Gold only", -- [1]
+			"Zekor-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zekor-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			24, -- [11]
+			"Player-3725-0ACA042B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Zekor|r",
+			[51] = 1611659588,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [23]
+		{
+			"227 Glad Arms War - WTS 2s arena carry to healers 1400/1800/2100 PM cr/ilvl", -- [1]
+			"Lleech-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lleech-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			26, -- [11]
+			"Player-3725-0AC43E7A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cLleech|r",
+			[51] = 1611659636,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [24]
+		{
+			"LF GMT+8 Guild, 220ilvl Resto Druid, CE Exp, have logs. Looking for Mythic prog and M+ guild", -- [1]
+			"Sentry-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sentry-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			27, -- [11]
+			"Player-3725-0AA7E065", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Sentry|r",
+			[51] = 1611659640,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [25]
+		{
+			"Selling M+0 - M+15s (Loot stack also available)Fill up your Great Vault with the highest ilvl gear. Also WTS Heroic 10/10 Castle Nathria  Rated PvP boosts!RBGs and more! Gold only.", -- [1]
+			"Edrada-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Edrada-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			28, -- [11]
+			"Player-3725-0BE5818E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Edrada|r",
+			[51] = 1611659644,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [26]
+		{
+			"Selling +10s now,  Msg for more info. Gold only", -- [1]
+			"Zekor-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Zekor-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			29, -- [11]
+			"Player-3725-0ACA042B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Zekor|r",
+			[51] = 1611659646,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [27]
+		{
+			"WTS +10-14 keys come get your 220-226 loot at the end of week, geared group all tradeable loot to you! gold only pm for more info", -- [1]
+			"Bigs-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bigs-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			34, -- [11]
+			"Player-3725-0ABBD32C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Bigs|r",
+			[51] = 1611659674,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [28]
+		{
+			"WTS Level 14-15 keys in time, run by 1900rio group, pst for info. ", -- [1]
+			"Floydcitybch-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Floydcitybch-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			37, -- [11]
+			"Player-3725-0A585EE2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Floydcitybch|r",
+			[51] = 1611659695,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [29]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-126842-3725-80852006|h[Guild: Frostbone]|h|r is a friendly (9/10H) Australian guild after exceptional RDPS to push for CE! Raid times are Thu+Mon 21:00-00:00 ST. LGBTQIA+ friendly. Casuals welcome! Pm for inv!", -- [1]
+			"Baeuty-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Baeuty-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			38, -- [11]
+			"Player-3725-0A3AE7E6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Baeuty|r",
+			[51] = 1611659709,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [30]
+		{
+			"<Pessimists> is a GMT+8 raiding guild and currently 10/10H & 6/10M. We are currently recruiting DPS for Wed/Thur/Mon 9pm-12mn GMT+8 Mythic Progression team. M+, PVP and Casual players are welcomed to join too!", -- [1]
+			"Fekja-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Fekja-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			46, -- [11]
+			"Player-3725-0A869A84", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Fekja|r",
+			[51] = 1611659767,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [31]
+		{
+			"Selling +10s now,  Msg for more info. Gold only", -- [1]
+			"Moboboots-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Moboboots-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1, -- [11]
+			"Player-3725-0ACB9623", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Moboboots|r",
+			[51] = 1611741618,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [32]
+		{
+			"Selling 3v3 Arena Boost 1400-1600-1800-2100 PST CR and desired rating! Also 2v2 to healers", -- [1]
+			"Iloveluke-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Iloveluke-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2, -- [11]
+			"Player-3725-0BE523E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Iloveluke|r",
+			[51] = 1611741620,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [33]
+		{
+			"Selling M+ 7-10 , Group Ready , come get your loot at the end of week , all tradeable loot to you . Can AFK. GOLD ONLY. Cheap Price ", -- [1]
+			"Kaynile-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kaynile-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3, -- [11]
+			"Player-3725-0AF11E1B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Kaynile|r",
+			[51] = 1611741621,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [34]
+		{
+			"WTS Twisting Corridors layers 1-8 and normal Torghast layers 1-8 (GOLD ONLY)", -- [1]
+			"Animavestra-Frostmourne", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Animavestra-Frostmourne", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			4, -- [11]
+			"Player-3725-0BE485A5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edAnimavestra|r",
+			[51] = 1611741627,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [35]
 	},
 }
